@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #d9c8a9;
+}
+
+.builder {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  height: 100vh;
+  background: #f8f1df;
+}
+
+/* Notebook paper */
+.parts-panel,
+.build-panel {
+  position: relative;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      #f8f1df 0px,
+      #f8f1df 27px,
+      #d6e4ff 28px
+    );
+}
+
+.parts-panel {
+  border-right: 3px solid #d44;
+  padding: 20px;
+}
+
+.parts-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #4a2b14;
+}
+
+.part-category {
+  margin-bottom: 18px;
+}
+
+.part-category h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #5a3a1a;
+}
+
+.part {
+  background: #fffaf0;
+  border: 1px solid #c9b18a;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  cursor: grab;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+}
+
+.part:hover {
+  transform: translateY(-1px);
+}
+
+.build-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.builder-header {
+  padding: 18px 24px;
+  border-bottom: 2px dashed #c9b18a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.45);
+}
+
+.builder-title {
+  font-size: 24px;
+  color: #4a2b14;
+}
+
+.launch-btn {
+  background: #2f7d32;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.launch-btn:hover {
+  background: #256428;
+}
+
+.build-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.rocket-stack {
+  width: 220px;
+  min-height: 520px;
+  border: 2px dashed #b89b72;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.32);
+}
+
+.rocket-part {
+  width: 120px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: 1px solid #8d6e63;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.builder-footer {
+  padding: 14px 24px;
+  border-top: 2px dashed #c9b18a;
+  display: flex;
+  gap: 24px;
+  color: #5a3a1a;
+  background: rgba(255,255,255,0.45);
+}
