@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocket Builder</title>
+
+  <link rel="stylesheet" href="css/core/reset.css" />
+  <link rel="stylesheet" href="css/screens/builder.css" />
+</head>
+<body>
+  <div class="builder">
+    <aside class="parts-panel">
+      <h2 class="parts-title">🧩 Rocket Parts</h2>
+
+      <div class="part-category">
+        <h3>🚀 Engines</h3>
+        <div class="part" data-part="engine">LV-T45 Engine</div>
+        <div class="part" data-part="engine">Terrier Engine</div>
+      </div>
+
+      <div class="part-category">
+        <h3>⛽ Fuel Tanks</h3>
+        <div class="part" data-part="tank">FL-T200 Tank</div>
+        <div class="part" data-part="tank">FL-T400 Tank</div>
+      </div>
+
+      <div class="part-category">
+        <h3>🛰 Capsules</h3>
+        <div class="part" data-part="capsule">Mk1 Capsule</div>
+      </div>
+
+      <div class="part-category">
+        <h3>🔧 Structural</h3>
+        <div class="part" data-part="structure">Decoupler</div>
+      </div>
+    </aside>
+
+    <section class="build-panel">
+      <header class="builder-header">
+        <div class="builder-title">📝 Rocket Design Notebook</div>
+        <button class="launch-btn" id="launchBtn">▶ Launch</button>
+      </header>
+
+      <div class="build-area">
+        <div class="rocket-stack" id="rocketStack">
+          <!-- Parts will appear here -->
+        </div>
+      </div>
+
+      <footer class="builder-footer">
+        <span>Mass: <strong id="massValue">0.0t</strong></span>
+        <span>Fuel: <strong id="fuelValue">0</strong></span>
+        <span>Stages: <strong id="stageValue">0</strong></span>
+      </footer>
+    </section>
+  </div>
+
+  <script type="module" src="js/screens/BuilderScreen.js"></script>
+</body>
+</html>
