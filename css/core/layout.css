@@ -1,0 +1,19 @@
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.screen--center {
+  display: grid;
+  place-items: center;
+}
