@@ -6,9 +6,8 @@ buttons.forEach((button) => {
 
     // Future router hook
     console.log(`Navigate to: ${target}`);
-
-    if (target === 'play') {
-      alert('Play screen will be added next.');
-    }
+if (target === 'play') {
+  window.location.href = 'play.html';
+}
   });
 });
