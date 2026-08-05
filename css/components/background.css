@@ -1,0 +1,50 @@
+.space-bg {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #111b36 0%, #020817 60%);
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 140px 120px, white, transparent),
+    radial-gradient(2px 2px at 280px 220px, #cbd5e1, transparent),
+    radial-gradient(1px 1px at 420px 80px, white, transparent);
+  background-size: 520px 320px;
+  animation: drift 24s linear infinite;
+  opacity: 0.85;
+}
+
+.planet {
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #60a5fa, #1d4ed8 58%, #0f172a 100%);
+  box-shadow: 0 0 80px rgba(96, 165, 250, 0.35);
+  animation: floatPlanet 10s ease-in-out infinite;
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes floatPlanet {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(14px) rotate(4deg);
+  }
+}
