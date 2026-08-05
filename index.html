@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini KSP</title>
+
+  <link rel="stylesheet" href="css/core/reset.css" />
+  <link rel="stylesheet" href="css/core/variables.css" />
+  <link rel="stylesheet" href="css/core/layout.css" />
+  <link rel="stylesheet" href="css/components/button.css" />
+  <link rel="stylesheet" href="css/components/panel.css" />
+  <link rel="stylesheet" href="css/components/background.css" />
+  <link rel="stylesheet" href="css/screens/menu.css" />
+</head>
+<body>
+  <div class="space-bg">
+    <div class="planet"></div>
+    <div class="stars"></div>
+  </div>
+
+  <main id="app" class="screen screen--center">
+    <section class="panel menu-panel">
+      <p class="menu-panel__eyebrow">Orbital Simulation Program</p>
+      <h1 class="menu-panel__title">MINI KSP</h1>
+      <p class="menu-panel__subtitle">
+        Build rockets, launch missions, and explore space.
+      </p>
+
+      <nav class="menu-actions" aria-label="Main menu">
+        <button class="ui-button ui-button--primary" data-screen="play">
+          ▶ Play
+        </button>
+
+        <button class="ui-button" data-screen="settings">
+          ⚙ Settings
+        </button>
+
+        <button class="ui-button" data-screen="about">
+          ℹ About
+        </button>
+      </nav>
+
+      <footer class="menu-panel__footer">
+        <span>Version 0.1.0</span>
+        <span>GitHub Ready UI</span>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="js/screens/MenuScreen.js"></script>
+</body>
+</html>
