@@ -1,0 +1,9 @@
+.panel {
+  width: min(92vw, 440px);
+  padding: 36px;
+  border-radius: var(--radius);
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
